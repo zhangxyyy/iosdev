@@ -22,17 +22,13 @@
                             <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.80000000000000004" contentMode="scaleAspectFit" semanticContentAttribute="spatial" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="SHf-PW-94C">
                                 <rect key="frame" x="66" y="677" width="92" height="34"/>
                                 <rect key="contentStretch" x="0.80000000000000004" y="0.0" width="1" height="1"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="34" id="Cnz-Zc-dpi"/>
-                                    <constraint firstAttribute="width" constant="92" id="Gqc-ad-y5p"/>
-                                </constraints>
                                 <size key="titleShadowOffset" width="11" height="11"/>
                                 <state key="normal" title="收藏联系人">
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="41" translatesAutoresizingMaskIntoConstraints="NO" id="IHL-el-INQ">
-                                <rect key="frame" x="62" y="399.5" width="35" height="144"/>
+                                <rect key="frame" x="62" y="297.5" width="35" height="144"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="751" text="姓名" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4AI-VE-j8S">
                                         <rect key="frame" x="0.0" y="0.0" width="35" height="20.5"/>
@@ -63,7 +59,7 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacingType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="6ls-AL-ePx">
-                                <rect key="frame" x="30" y="266" width="354" height="88.5"/>
+                                <rect key="frame" x="30" y="164" width="354" height="88.5"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="uPK-v4-kxJ">
                                         <rect key="frame" x="0.0" y="0.0" width="88.5" height="88.5"/>
@@ -121,10 +117,9 @@
                                 </subviews>
                             </stackView>
                             <button autoresizesSubviews="NO" opaque="NO" clearsContextBeforeDrawing="NO" multipleTouchEnabled="YES" userInteractionEnabled="NO" alpha="0.80000001192092896" contentMode="scaleAspectFit" semanticContentAttribute="spatial" enabled="NO" selected="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" reversesTitleShadowWhenHighlighted="YES" adjustsImageSizeForAccessibilityContentSizeCategory="YES" lineBreakMode="headTruncation" springLoaded="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gVO-Ns-7MH">
-                                <rect key="frame" x="239" y="677" width="92" height="34"/>
+                                <rect key="frame" x="246" y="677" width="92" height="34"/>
                                 <rect key="contentStretch" x="0.80000000000000004" y="0.0" width="1" height="1"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="92" id="KiG-8s-bg2"/>
                                     <constraint firstAttribute="height" constant="34" id="qC3-gN-6qZ"/>
                                 </constraints>
                                 <size key="titleShadowOffset" width="11" height="11"/>
@@ -132,27 +127,27 @@
                                     <color key="titleColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-Ot-ZCv">
-                                <rect key="frame" x="164" y="54" width="86" height="192"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" adjustsImageSizeForAccessibilityContentSizeCategory="YES" translatesAutoresizingMaskIntoConstraints="NO" id="TCC-Ot-ZCv">
+                                <rect key="frame" x="152" y="44" width="110" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="110" id="Qpo-IL-cf2"/>
+                                    <constraint firstAttribute="height" constant="80" id="yJw-Ih-yje"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
                         <constraints>
+                            <constraint firstItem="TCC-Ot-ZCv" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="0S0-P5-G7C"/>
                             <constraint firstItem="6ls-AL-ePx" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="30" id="2CR-VV-P6X"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="IHL-el-INQ" secondAttribute="trailing" constant="317" id="2ju-x0-tPx"/>
-                            <constraint firstItem="TCC-Ot-ZCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="10" id="49l-su-gHT"/>
-                            <constraint firstItem="TCC-Ot-ZCv" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="164" id="Bdk-VW-NmN"/>
+                            <constraint firstItem="gVO-Ns-7MH" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="SHf-PW-94C" secondAttribute="trailing" constant="8" symbolic="YES" id="6IE-mn-0cu"/>
                             <constraint firstItem="IHL-el-INQ" firstAttribute="top" secondItem="6ls-AL-ePx" secondAttribute="bottom" constant="45" id="EWo-3R-JpX"/>
-                            <constraint firstItem="6ls-AL-ePx" firstAttribute="centerX" secondItem="TCC-Ot-ZCv" secondAttribute="centerX" id="Ty4-WV-CH7"/>
-                            <constraint firstItem="SHf-PW-94C" firstAttribute="top" secondItem="IHL-el-INQ" secondAttribute="bottom" constant="133.5" id="XiI-H0-OeG"/>
-                            <constraint firstItem="6ls-AL-ePx" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="266" id="YQL-Pe-wAp"/>
-                            <constraint firstItem="gVO-Ns-7MH" firstAttribute="leading" secondItem="SHf-PW-94C" secondAttribute="trailing" constant="81" id="bsq-17-Bfv"/>
+                            <constraint firstItem="6ls-AL-ePx" firstAttribute="top" secondItem="TCC-Ot-ZCv" secondAttribute="bottom" constant="40" id="Hsm-Ug-roM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gVO-Ns-7MH" secondAttribute="trailing" constant="76" id="czn-xW-1Ns"/>
                             <constraint firstItem="SHf-PW-94C" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="66" id="dRV-Za-bLQ"/>
+                            <constraint firstItem="TCC-Ot-ZCv" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fgT-6d-ymp"/>
                             <constraint firstItem="IHL-el-INQ" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="62" id="gVT-mo-U62"/>
                             <constraint firstItem="SHf-PW-94C" firstAttribute="baseline" secondItem="gVO-Ns-7MH" secondAttribute="baseline" id="kaH-zP-dMB"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="gVO-Ns-7MH" secondAttribute="bottom" constant="151" id="mUu-ML-crq"/>
-                            <constraint firstItem="6ls-AL-ePx" firstAttribute="top" secondItem="TCC-Ot-ZCv" secondAttribute="bottom" constant="20" id="mjl-f0-g7B"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SHf-PW-94C" secondAttribute="bottom" constant="151" id="paz-PC-PvS"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6ls-AL-ePx" secondAttribute="trailing" constant="30" id="tW2-S5-7et"/>
                         </constraints>
@@ -166,7 +161,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <gestureRecognizer id="HOO-U4-RWB"/>
             </objects>
-            <point key="canvasLocation" x="140.57971014492756" y="118.52678571428571"/>
+            <point key="canvasLocation" x="139.95535714285714" y="117.39130434782609"/>
         </scene>
     </scenes>
 </document>
